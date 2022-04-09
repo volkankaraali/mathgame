@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { MathGameProvider } from './contexts/mathgameContext';
+import Game from './pages/Game';
+import Home from './pages/Home';
+import Result from './pages/Result';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MathGameProvider>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/game' element={<Game />} />
+        <Route path='/result' element={<Result />} />
+      </Routes>
+      
+    </MathGameProvider>
   );
 }
 
