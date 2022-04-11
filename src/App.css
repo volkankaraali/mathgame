@@ -136,3 +136,54 @@ h1{
   display: inline-block;
   font-size: 64px;
 }
+
+
+@media only screen and (min-width:1440px) and (max-width:1919px){
+  .question{
+    top: 16rem;
+    left: 17rem;
+    font-size: 8rem;
+  }
+  .firstAnswer {
+    margin-left: 6rem;
+  }
+  .secondAnswer {
+    margin-left: 23rem;
+  }
+
+  .thirdAnswer {
+    margin-left: 10rem;
+}
+}
+
+
+@media only screen and (min-width:1024px) and (max-width:1439px) {
+  .gameLeftSide{
+    margin-left:3rem;
+  }
+  .question{
+    left:13rem;
+    top:16rem;
+    font-size: 8rem;
+  }
+
+  .scoreBoard{
+    font-size: 2.3rem;
+  }
+
+  .scoreBoard div{
+    margin-right: 10px;
+  }
+  
+  .firstAnswer {
+    margin-left: 4rem;
+  }
+
+  .secondAnswer{
+    margin-left: 17rem;
+  }
+  .thirdAnswer {
+    margin-left: 7rem;
+  }
+
+}
